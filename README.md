@@ -1,7 +1,7 @@
-### This repo contains a few small projects for a deeper dive into Python
+### A few small Python projects around key concepts of the language.
 
 #### 1) T9_predictive_text.py
-T9 was used pre-smartphone to predict words while typing with 9 numbers.
+Implements [T9](https://en.wikipedia.org/wiki/T9_(predictive_text)), which was used pre-smartphone to predict words while typing with 9 numbers.
 
 Scripts needed:
 * T9_predictive_text.py
@@ -12,5 +12,8 @@ How to use:
 `python3.9 T9_predictive_text.py`
 
 #### 2) memoize.py
-A decorator to cache the results of a function
+A decorator to cache the results of a function.
+
+#### 3) runtime_type_checker.py
+A decorator factory to check whether supplied function arguments and results match annotations.
 

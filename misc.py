@@ -92,3 +92,7 @@ def div_test(n):
 div_3 = div_test(3)
 div_3(4)
     
+def foo(a: int, b: str) -> bool:
+    return b[a] == 'X'
+    
+type(foo.__annotations__['a'])
