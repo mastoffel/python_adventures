@@ -1,4 +1,5 @@
 # text on 9 keys, like in the old days
+# uses a trie and recursion
 import helper
 from collections import defaultdict
 from functools import reduce

@@ -96,3 +96,4 @@ def foo(a: int, b: str) -> bool:
     return b[a] == 'X'
     
 type(foo.__annotations__['a'])
+
