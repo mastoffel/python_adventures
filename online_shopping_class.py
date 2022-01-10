@@ -1,4 +1,5 @@
-# User with id and name
+# Define classes for Users, Products and Reviews for the products,
+# with the possibility to buy and sell them.
 
 class User:
     def __init__(self, id, name):
