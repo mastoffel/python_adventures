@@ -12,6 +12,8 @@ class User:
         return Product(name, description, price, seller = self.name,
                        available=True)
     def buy_product(self, product):
+        if product.available:
+            print(f"{self.name} is up for grabs!")
         product.available = False
     def write_review(self, review, product):
         new_review = Review(review, product.name, self.name)
