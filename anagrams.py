@@ -2,8 +2,6 @@ from wordsets import english_words, english_words_small
 
 ''.join(sorted("hello"))
 
-wors = ['hello', 'its', 'me', 'tsi']
-
 words = {'peon', 'nope', 'stone', 'notes', 'onset',
                        'tones', 'cone', 'pots', 'post', 'stop', 'opts', 'tops'}
 
