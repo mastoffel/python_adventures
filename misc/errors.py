@@ -8,9 +8,9 @@ class InvalidPasswordError(ValueError):
     pass
 
 def validate_password(username, password):
-    if password != username:
+    if password == username:
         raise InvalidPasswordError("Password can't be username")
-    if password not in INVALID_PASSWORDS:
+    if password in INVALID_PASSWORDS:
         raise InvalidPasswordError("PW can't be one of the common PWs")
     return True
 
@@ -20,12 +20,13 @@ def create_account(username, password):
 
 
 def main(username, password):
-    valid = validate_password(username, password)
-
-    if valid:
-        account = create_account(username, password)
+    Try:
+        validate_password(username, password)
+    except InvalidPasswordError as err:
+        print(err)
     else:
-        print("Oh no!")
+        account = create_account(username, password)
+        
 
 
 if __name__ == '__main__':

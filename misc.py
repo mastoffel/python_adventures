@@ -97,3 +97,7 @@ def foo(a: int, b: str) -> bool:
     
 type(foo.__annotations__['a'])
 
+import pathlib
+
+here = pathlib.Path('.')
+here.parent
