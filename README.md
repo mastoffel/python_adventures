@@ -1,6 +1,6 @@
 ### A few small Python projects around key concepts of the language.
 
-#### data_structures  
+#### 1) data_structures  
 ##### T9_predictive_text.py
 Implements [T9](https://en.wikipedia.org/wiki/T9_(predictive_text)), which was used pre-smartphone to predict words while typing with 9 numbers. 
 
@@ -12,18 +12,18 @@ Scripts needed:
 How to use:  
 `python3.9 T9_predictive_text.py`
 
-#### functional_programming  
+#### 2) functional_programming  
 ##### memoize.py
 A decorator to cache the results of a function.
 
 ##### runtime_type_checker.py
 A decorator factory to check whether supplied function arguments and results match annotations.
 
-#### oop
+#### 3) oop
 ##### online_shopping_classes.py
 Classes to do online shopping.
 
-#### file_io
+#### 4) file_io
 ##### routes.py
 Find routes between airports.
 
