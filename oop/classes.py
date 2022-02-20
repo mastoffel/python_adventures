@@ -7,8 +7,10 @@ class Customer:
     @classmethod
     def premium(cls, *args):
         return cls(*args, tier = ('premium', 10))
+    
     def can_access(self, content):
         return content['tier'] == 'free' or content['tier'] == self.tier
+    
     def bill_for(self, months):
         return self.cost * int(months)
         
@@ -36,6 +38,7 @@ class Point:
         return Point(self.x + point2.x, self.y + point2.y)
     def __str__(self):
         return f"Point({self.x}, {self.y})"
+
     
 point1 = Point(1, 3)
 point2 = Point(-3, 6)

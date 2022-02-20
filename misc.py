@@ -1,3 +1,4 @@
+from posixpath import split
 import random
 # printing profile with variadic arguments
 
@@ -101,3 +102,24 @@ import pathlib
 
 here = pathlib.Path('.')
 here.parent
+
+mystring = "--hello--"
+mystring.strip("--")
+
+cat_string = "--Whiskers--, --Spot--, --Meowmeow--, --Tiger--, --Kitty--, --Henry--, --Mr.Paws--"
+[s.strip("--")  for s in cat_string.split(", ")]
+
+import random
+random.choice(["lol", "hey"])
+
+
+import random
+import os
+
+catString = "--Whiskers--, --Spot--, --Meowmeow--, --Tiger--, --Kitty--, --Henry--, --Mr.Paws--"
+def RANDOM_CAT(string_list):
+    cat_list = catString.split(', ')# split the cats
+    cat_list = [cat.strip('--') for cat in cat_list]
+        return random.choice(cat_list)
+
+print(  f'{RANDOM_CAT(catString)} is a good kitty'  )
